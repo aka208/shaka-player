@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+/* imported bootstrap and font awesome css file from bootstrap and font-awesome package */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+.cdk-overlay-backdrop,.cdk-overlay-backdrop-showing {
+    opacity: 9 !important;
+}
+
+.cdk-overlay-dark-backdrop {
+    background: rgba(0,0,0,0.9) !important;
+}

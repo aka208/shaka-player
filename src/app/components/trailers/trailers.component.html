@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="trailer-container-title"><img class = "trailer-icon" src="https://aka208.github.io/shaka-player/assets/images/trailers.png"><strong> Trailers</strong></div>
+  <div class="flex-container">
+    <div *ngFor="let videoUrl of videoSrc">
+        <div class="card">
+            <div class="card-body trailer-card">
+                <a class="video-frame"> <img class="trailer-poster" [src]=sanitizer.bypassSecurityTrustResourceUrl(videoUrl.imgUrl)> </a>
+                <div class="play-icon">
+                      <img class="img-play" (click)="setUrl(videoUrl.src)" src = "https://aka208.github.io/shaka-player/assets/images/play.png"/>
+                </div>
+              
+              <!-- <iframe class="video-frame" [src]=sanitizer.bypassSecurityTrustResourceUrl(videoUrl.src) frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
+              <div class="card-text trailer-card-title">{{videoUrl.description}}</div>
+            </div>
+            <div class="trailer-card-footer">
+              <div>{{videoUrl.movieBy}}</div>
+              <div>{{videoUrl.views}}</div>
+              </div>
+          </div>
+      
+    </div>
+  </div>
+  
+  </div>
+  <!-- sanitizer.bypassSecurityTrustResourceUrl(videoUrl.src -->

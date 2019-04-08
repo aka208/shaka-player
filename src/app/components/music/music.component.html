@@ -1,0 +1,25 @@
+<div class="container">
+<div class="music-container-title"><img class = "music-icon" src="https://aka208.github.io/shaka-player/assets/images/music.png"><strong>Latest Music Videos</strong></div>
+<div class="flex-container">
+  <div *ngFor="let videoUrl of videoSrc">
+      <div class="card">
+          <div class="card-body music-card">
+              <a class="music-frame"> <img class="music-poster" [src]=sanitizer.bypassSecurityTrustResourceUrl(videoUrl.imgUrl)> </a>
+                <div class="play-icon">
+                      <img class="img-play" (click)="setUrl(videoUrl.src)" src = "https://aka208.github.io/shaka-player/assets/images/play.png"/>
+                </div>
+            
+            <!-- <iframe class="video-frame" [src]=sanitizer.bypassSecurityTrustResourceUrl(videoUrl.src) frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
+            <div class="card-text music-card-title">{{videoUrl.description}}</div>
+          </div>
+          <div class="music-card-footer">
+            <div>{{videoUrl.musicBy}}</div>
+            <div>{{videoUrl.views}}</div>
+            </div>
+        </div>
+    
+  </div>
+</div>
+
+</div>
+<!-- sanitizer.bypassSecurityTrustResourceUrl(videoUrl.src -->
