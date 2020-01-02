@@ -1,0 +1,58 @@
+<div class = "main-dashboard-container">
+<div class = "dashboard-header">
+  <span id = "dashboard-title">DASHBOARD</span>
+</div>
+<section>
+  <div class = "cards">
+    <div class = "card card-one">
+      <span class = "icon-container"><i class="fa fa-calendar-check-o" style="font-size:40px"></i></span>
+      <span class = "maintenance-number">
+        <div class = "total-amt">226</div>
+      <div class = "mnt-text">Maintenance Number</div>
+
+      </span>
+    </div>
+    <div class = "card card-two">
+        <span class = "icon-container"><i class="fa fa-warning" style="font-size:40px"></i></span>
+        <span class = "maintenance-number">
+          <div class = "total-amt">786</div>
+        <div class = "mnt-text">Anamoly Detected</div>
+  
+        </span>
+      
+    </div>
+    <div class = "card card-three">
+        <span class = "icon-container"><i class="fa fa-check-square-o" style="font-size:40px"></i></span>
+        <span class = "maintenance-number">
+          <div class = "total-amt">78%</div>
+        <div class = "mnt-text">Anamoly Resolved</div>
+  
+        </span>
+      
+    </div>
+    <div class = "card card-four">
+        <span class = "icon-container"><i class="fa fa-close" style="font-size:40px"></i></span>
+        <span class = "maintenance-number">
+          <div class = "total-amt">22%</div>
+        <div class = "mnt-text">Anamoly Pending </div>
+  
+        </span>
+      
+    </div>
+  </div>
+</section>
+<section class = "analytics-page-container">
+  <div class = "cards">
+    <div class = "card card-two list-card">
+    </div>
+    <div class = "card card-two chart-card">
+      <div class = "chart-header">
+        <span>Total Anamoly Generated</span>
+      </div>
+      <canvas #lineChart>{{ chart }}</canvas>
+    </div>
+    <div class = "card card-two pie-card">
+    </div>
+  </div>
+  </section>
+</div>

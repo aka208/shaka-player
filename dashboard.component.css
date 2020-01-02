@@ -1,0 +1,130 @@
+.main-dashboard-container{
+    padding: 2%;
+}
+
+.dashboard-header{
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+#dashboard-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.cards{
+    width: 100%;
+    padding-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card{
+    width: 23%;
+    border: 1px solid lightgray;
+    height: 17vh;
+    margin-right: 1%;
+}
+
+.card-one{
+    background-color: #2196f3;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-two{
+    background-color: #00e676;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-three{
+    background-color: #9575cd;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-four{
+    background-color: #f44336;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fa{
+    color: white;
+}
+
+.icon-container{
+    padding: 5%;
+    height: 12vh;
+    margin-top: 3%
+}
+
+.maintenance-number{
+    font-size: 4rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    height: 17vh;
+}
+
+.mnt-text{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.total-amt{
+    padding-left: 24%;
+}
+
+.list-card{
+    width: 23%;
+    background-color: #2196f3;
+    height: 61vh;
+}
+
+.chart-card{
+    width: 47%;
+    background-color: #1a237e;
+    height: 61vh;
+    color: #303f9f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.3rem;
+}
+
+.pie-card{
+    width: 23%;
+    background-color: #9575cd;
+    height: 61vh;
+}
+
+.card-two{
+    margin-right: 1%;
+}
+
+.analytics-page-container{
+    margin-top: 1%;
+}
+
+.chart-header{
+    font-family: 'Open Sans', sans-serif;
+    color: #c7cce7;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
